@@ -35,7 +35,7 @@
     _selectionIndicatorHeight = 2.0f;
     _animationDuration = 0.2;
     _autoAdjustSelectionIndicatorWidth = YES;
-    _font = [UIFont systemFontOfSize:15.0f];
+    _font = [UIFont systemFontOfSize:12.0f];
 
     _selectionIndicator = [UIView new];
     _selectionIndicator.backgroundColor = self.tintColor;
@@ -546,7 +546,7 @@
             
             CGFloat fontSizeForTitle = [self appropriateFontSizeForTitle:title];
             
-            [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:self.font.fontName size:19.0f] range:[string rangeOfString:count]];
+            [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:self.font.fontName size:25.0f] range:[string rangeOfString:count]];
             [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:self.font.fontName size:fontSizeForTitle] range:[string rangeOfString:title]];
             
             if (state == UIControlStateNormal) {
